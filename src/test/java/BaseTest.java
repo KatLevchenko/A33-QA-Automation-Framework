@@ -28,7 +28,7 @@ public class BaseTest {
     protected String password = "";
     protected String email = "";
     protected String homeUrl = "";
-    private final static int TIME = 10; // time to set up implicitlyWait for the browser
+    private final static int TIME = 11; // time to set up implicitlyWait for the browser
 
 
 //    @BeforeSuite
@@ -45,7 +45,7 @@ public class BaseTest {
         email = LoginEmail;
         password = LoginPassword;
         homeUrl = BaseUrl;
-        threadDriver.set(pickBrowser("browser")); //System.getProperty("browser")
+        threadDriver.set(pickBrowser(System.getProperty("browser"))); //System.getProperty("browser")
         threadDriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(TIME));
         threadDriver.get().manage().window().maximize();
         threadDriver.get().manage().deleteAllCookies();
