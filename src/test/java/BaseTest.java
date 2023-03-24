@@ -107,6 +107,7 @@ public class BaseTest {
         }
     }
 
+
     @AfterMethod
     public void closeBrowser () {
         threadDriver.get().close();

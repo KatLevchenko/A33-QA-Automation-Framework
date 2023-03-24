@@ -8,8 +8,7 @@
 
     <test name="Example Test" preserve-order="true">
         <classes>
-            <class name="LoginTests"/>
-            <class name="Homework18"/>
+            <class name="LoginTests"></class>
         </classes>
     </test>
 </suite>
